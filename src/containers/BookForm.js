@@ -30,7 +30,7 @@ class BookForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.CREATE_BOOK({
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: this.state.title,
       category: this.state.category,
     });
