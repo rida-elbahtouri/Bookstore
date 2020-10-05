@@ -28,7 +28,6 @@ class BookForm extends Component {
   };
 
   handleSubmit = (e) => {
-    console.log("hi")
     e.preventDefault();
     this.props.CREATE_BOOK({
       id: Math.floor(Math.random() * 10),
