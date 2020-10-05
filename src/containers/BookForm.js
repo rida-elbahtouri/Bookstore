@@ -28,6 +28,7 @@ class BookForm extends Component {
   };
 
   handleSubmit = (e) => {
+    console.log("hi")
     e.preventDefault();
     this.props.CREATE_BOOK({
       id: Math.floor(Math.random() * 10),
@@ -53,11 +54,11 @@ class BookForm extends Component {
               <option key={cat}>{cat}</option>
             ))}
           </select>
-          <input
-            onSubmit={this.handleSubmit}
+          <button
+            onClick={this.handleSubmit}
             type="submit"
             value="Create book"
-          />
+          >Submit</button>
         </form>
       </div>
     );
