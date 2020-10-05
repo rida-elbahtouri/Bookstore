@@ -49,7 +49,7 @@ const mapDispatchToProps = (dispatch) => {
 const BookListConnect = connect(mapStateToProps, mapDispatchToProps)(BookList);
 
 BookList.propTypes = {
-  books: PropTypes.isRequired,
+  books: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default BookListConnect;

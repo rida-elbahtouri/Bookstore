@@ -11,7 +11,11 @@ const Books = ({ book, handleRemoveBook }) => (
 );
 
 Books.propTypes = {
-  book: PropTypes,
+  book: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired
+  }).isRequired,
   handleRemoveBook: PropTypes.func.isRequired
 };
 export default Books;
