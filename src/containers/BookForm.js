@@ -13,13 +13,13 @@ const BookForm = () => {
   return (
     <div>
       <form>
-        <label for="title">Title</label>
+        Title
         <input type="text" placeholder="enter the book's title" />
 
-        <label for="title">Categories</label>
+        Categories
         <select>
-          {categories.map((cat) => (
-            <option value={cat}>{cat}</option>
+          {categories.map(cat => (
+            <option key={cat}>{cat}</option>
           ))}
         </select>
         <input type="submit" value="Create book" />
