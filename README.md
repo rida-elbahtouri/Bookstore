@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BookStore
 
-## Available Scripts
+# BookStore (React)
 
-In the project directory, you can run:
+In this project we were tasked with building a bookstore application with React and Redux to organize and manage the books.
 
-### `npm start`
+### Live Link
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[click here](https://bookstorerb.herokuapp.com/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- React
+- Redux
+- JSX
+- CSS
+- JavaScript
+- ESLint
+- VS Code
+- NPM
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+You must have a browser on your PC in order to use the application. [Click here](https://www.mozilla.org/en-US/firefox/new/) to download one.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+you must have [NodeJS](https://nodejs.org/en/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. clone the project
 
-### `npm run eject`
+```bash
+# Clone this repository
+$ git https://github.com/rida-elbahtouri/Bookstore/
+# Go into the repository
+$ cd Bookstore
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**You can Install the dependencies with this commands**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ npm install
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### start the app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ npm  start
+ # and open the link provided
+```
 
-### Code Splitting
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+👤 **Brittany Blake**
 
-### Analyzing the Bundle Size
+- Github: [@BrittanyBlake](https://github.com/BrittanyBlake)
+- Twitter: [@bbcodes\_](https://twitter.com/bbcodes_)
+- Linkedin: [Brittany Blake](https://www.linkedin.com/in/brittany-blake-843951109/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+👤 **Rida Elbahtouri**
 
-### Making a Progressive Web App
+- [Github](https://github.com/rida-elbahtouri)
+- [Twitter](https://twitter.com/RElbahtouri)
+- [Linkedin](https://www.linkedin.com/in/rida-elbahtouri/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Feel free to check the <a href="https://github.com/rida-elbahtouri/Bookstore/issues" target="_blank">issues page</a>.
 
-### Deployment
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- <a href="https://reactjs.org/" target="_blank">React js</a>
+- <a href="https://redux.js.org" target="_blank">Redux JS</a>
