@@ -3,14 +3,15 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { REMOVE_BOOK } from '../actions/index';
-
+import CategoryFilter from '../components/CategoryFilter';
 const BookList = ({ books, REMOVE_BOOK }) => {
-  const handleRemoveBook = book => {
+  const handleRemoveBook = (book) => {
     REMOVE_BOOK(book);
   };
 
   return (
     <div>
+      <CategoryFilter />
       <table>
         <thead>
           <tr>
@@ -20,7 +21,7 @@ const BookList = ({ books, REMOVE_BOOK }) => {
           </tr>
         </thead>
         <tbody>
-          {books.map(book => (
+          {books.map((book) => (
             <Book
               book={book}
               key={book.id}
@@ -33,12 +34,15 @@ const BookList = ({ books, REMOVE_BOOK }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  books: state.books,
-});
-
-const mapDispatchToProps = dispatch => ({
-  REMOVE_BOOK: book => {
+const mapStateToProps = (state) => {
+  console.log(state);
+  return {
+    books: state.books,
+    filter: state.filter,
+  };
+};
+const mapDispatchToProps = (dispatch) => ({
+  REMOVE_BOOK: (book) => {
     dispatch(REMOVE_BOOK(book));
   },
 });
