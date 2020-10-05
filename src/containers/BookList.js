@@ -1,11 +1,11 @@
-import React from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import Book from "../components/Book";
-import { REMOVE_BOOK } from "../actions/index";
+import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import Book from '../components/Book';
+import { REMOVE_BOOK } from '../actions/index';
 
 const BookList = ({ books, REMOVE_BOOK }) => {
-  const handleRemoveBook = (book) => {
+  const handleRemoveBook = book => {
     REMOVE_BOOK(book);
   };
 
@@ -20,7 +20,7 @@ const BookList = ({ books, REMOVE_BOOK }) => {
           </tr>
         </thead>
         <tbody>
-          {books.map((book) => (
+          {books.map(book => (
             <Book
               book={book}
               key={book.id}
@@ -33,22 +33,21 @@ const BookList = ({ books, REMOVE_BOOK }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   books: state.books,
 });
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    REMOVE_BOOK: (book) => {
-      dispatch(REMOVE_BOOK(book));
-    },
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  REMOVE_BOOK: book => {
+    dispatch(REMOVE_BOOK(book));
+  },
+});
 
 const BookListConnect = connect(mapStateToProps, mapDispatchToProps)(BookList);
 
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
+  REMOVE_BOOK: PropTypes.func.isRequired,
 };
 
 export default BookListConnect;

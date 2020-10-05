@@ -4,24 +4,24 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App';
-import rootReducer from "./reducers/index";
+import rootReducer from './reducers/index';
 
 const initial = {
   books: [
     {
       id: Math.floor(Math.random() * 100),
-      title: "Amazing monkeys",
-      category: "Action",
+      title: 'Amazing monkeys',
+      category: 'Action',
     },
     {
       id: Math.floor(Math.random() * 100),
-      title: "Becoming",
-      category: "Biography",
+      title: 'Becoming',
+      category: 'Biography',
     },
     {
       id: Math.floor(Math.random() * 100),
-      title: "IT",
-      category: "Horror",
+      title: 'IT',
+      category: 'Horror',
     },
   ],
 };
@@ -31,5 +31,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
