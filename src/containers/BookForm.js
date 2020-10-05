@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux';
+import { CREATE_BOOK } from '../actions/index';
 class BookForm extends Component {
   categories = [
     'Action',
@@ -26,6 +27,15 @@ class BookForm extends Component {
     });
   };
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.CREATE_BOOK({
+      id: Math.floor(Math.random() * 10),
+      title: this.state.title,
+      category: this.state.category,
+    });
+    this.setState({ title: '', category: '' });
+  };
   render() {
     return (
       <div>
@@ -43,11 +53,22 @@ class BookForm extends Component {
               <option key={cat}>{cat}</option>
             ))}
           </select>
-          <input type="submit" value="Create book" />
+          <input
+            onSubmit={this.handleSubmit}
+            type="submit"
+            value="Create book"
+          />
         </form>
       </div>
     );
   }
 }
+const mapDispatchToProps = (dispatch) => {
+  return {
+    CREATE_BOOK: (book) => {
+      dispatch(CREATE_BOOK(book));
+    },
+  };
+};
 
-export default BookForm;
+export default connect(null, mapDispatchToProps)(BookForm);

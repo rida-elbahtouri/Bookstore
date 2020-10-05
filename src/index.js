@@ -7,23 +7,7 @@ import App from './components/App';
 import BooksReducer from './reducers/books';
 
 const initial = {
-  books: [
-    {
-      id: Math.floor(Math.random() * 10),
-      title: 'Amazing monkeys',
-      category: 'Action',
-    },
-    {
-      id: Math.floor(Math.random() * 10),
-      title: 'Becoming',
-      category: 'Biography',
-    },
-    {
-      id: Math.floor(Math.random() * 10),
-      title: 'IT',
-      category: 'Horror',
-    },
-  ],
+  books: [],
 };
 
 const store = createStore(BooksReducer, initial);
@@ -31,5 +15,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
