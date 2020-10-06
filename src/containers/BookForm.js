@@ -23,14 +23,14 @@ class BookForm extends Component {
     };
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     const { name } = e.target;
     this.setState({
       [name]: e.target.value,
     });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     const { CREATE_BOOK } = this.props;
     const { title, category } = this.state;
@@ -54,7 +54,7 @@ class BookForm extends Component {
             placeholder="Book title"
           />
           <select name="category" onChange={this.handleChange}>
-            {this.categories.map((cat) => (
+            {this.categories.map(cat => (
               <option key={cat}>{cat}</option>
             ))}
           </select>
@@ -66,8 +66,8 @@ class BookForm extends Component {
     );
   }
 }
-const mapDispatchToProps = (dispatch) => ({
-  CREATE_BOOK: (book) => {
+const mapDispatchToProps = dispatch => ({
+  CREATE_BOOK: book => {
     dispatch(CREATE_BOOK(book));
   },
 });

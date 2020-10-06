@@ -20,7 +20,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
         name="category"
         onChange={handleFilterChange}
       >
-        {categories.map((cat) => (
+        {categories.map(cat => (
           <option key={cat}>
             {cat}
           </option>
