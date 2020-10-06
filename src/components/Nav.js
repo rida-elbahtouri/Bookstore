@@ -1,31 +1,24 @@
-import React from "react";
-import icon from '../assets/user.svg'
+import React from 'react';
+import icon from '../assets/user.svg';
 
 const NavBar = () => (
   <nav className="">
-  <div className="panel-bg">
-    <ul>
+    <div className="panel-bg">
+      <ul>
         <li>
-          <a href="#" className="azure Bookstore-CMS">
-            Bookstore CMS
-          </a>
+          <span className="azure Bookstore-CMS">Bookstore CMS</span>
         </li>
         <li>
-          <a href="#" className="BOOKS ">
-            BOOKS
-          </a>
+          <span className="BOOKS ">BOOKS</span>
         </li>
         <li>
-          <a href="#" className=" CATEGORIES">
-            CATEGORIES
-          </a>
+          <span className=" CATEGORIES">CATEGORIES</span>
         </li>
         <li>
-          <img src={icon} className="azure Mask"></img>
+          <img alt="icon" src={icon} className="azure Mask" />
         </li>
       </ul>
-  </div>
-    
+    </div>
   </nav>
 );
 

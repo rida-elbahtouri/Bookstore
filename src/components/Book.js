@@ -10,9 +10,13 @@ const Books = ({ book, handleRemoveBook }) => (
         <td className="Remove">Comments</td>
         <span className="line">|</span>
         <td className="Remove">
-          <a href="#" onClick={() => handleRemoveBook(book)}>
+          <button
+            className="Remove"
+            type="button"
+            onClick={() => handleRemoveBook(book)}
+          >
             Remove
-          </a>
+          </button>
         </td>
         <span className="line">|</span>
 
@@ -28,7 +32,10 @@ const Books = ({ book, handleRemoveBook }) => (
     </div>
     <div className="udpateprogress">
       <p className="current-chap">current chapter</p>
-      <p className="chapter-num">Chapter {book.id}</p>
+      <p className="chapter-num">
+        Chapter
+        {book.id}
+      </p>
       <button type="button">UPDATE PROGRESS</button>
     </div>
   </tr>

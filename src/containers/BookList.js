@@ -24,11 +24,11 @@ const BookList = ({
     <div>
       <CategoryFilter handleFilterChange={handleFilterChange} />
       <table className="book-table">
-        
-        <tbody >
-          {booksfiltered.map((book) => (
+
+        <tbody>
+          {booksfiltered.map(book => (
             <Book
-              
+
               book={book}
               key={book.id}
               handleRemoveBook={handleRemoveBook}

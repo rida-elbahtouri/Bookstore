@@ -44,14 +44,14 @@ a {
   font-family:
     Montserratapple-system,
     system-ui,
-    "Segoe UI",
+    'Segoe UI',
     Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -164,6 +164,8 @@ table {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  background: none;
+  cursor: pointer;
 }
 
 .line {
