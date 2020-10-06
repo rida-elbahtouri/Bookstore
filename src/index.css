@@ -18,21 +18,23 @@ body {
 .Mask {
   width: 27px;
   height: 27px;
-  
   position: absolute;
   right: 40px;
 }
+
 nav {
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
+
 li {
   list-style: none;
   display: inline;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -41,16 +43,26 @@ a {
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  font-family: Montserratapple-system, system-ui, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    Montserratapple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  
 }
+
 .BOOKS {
   width: 59px;
   height: 16px;
@@ -101,7 +113,7 @@ a {
   height: 170px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -114,13 +126,15 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* .book-table{
-   width: 100%; 
+   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 } */
 
 .book-cat {
+  padding-top: 20px;
   width: 49px;
   height: 18px;
   opacity: 0.5;
@@ -178,10 +192,6 @@ table {
   padding-top: 20px;
 }
 
-.book-cat {
-  padding-top: 20px;
-}
-
 .book-progress {
   display: flex;
   float: right;
@@ -230,9 +240,11 @@ table {
   display: flex;
   flex-direction: column;
 }
+
 .udpateprogress {
   font-family: Roboto, Helvetica, sans-serif;
 }
+
 button {
   background-color: #0290ff;
   border: none;
@@ -241,6 +253,7 @@ button {
   border-radius: 3px;
   color: white;
 }
+
 .current-chap {
   height: 18px;
   opacity: 0.5;
@@ -254,6 +267,7 @@ button {
   color: #939393;
   margin: 0;
 }
+
 .chapter-num {
   width: 212px;
   height: 21px;
@@ -265,38 +279,32 @@ button {
   letter-spacing: -0.4px;
   margin-top: 0;
 }
+
 .book-form {
   border-top: 1px solid #e8e8e8;
   width: 1300px;
-  margin: 30px auto; 
-  
+  margin: 30px auto;
   font-family: Roboto, Helvetica, sans-serif;
 }
+
 .book-form h3 {
   width: 174px;
-
   height: 24px;
-
   font-size: 20px;
-
   font-weight: bold;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: -0.18px;
-
-  color: #888888;
+  color: #888;
 }
+
 .book-form form input {
   width: 50%;
   height: 45px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: 4%;
   box-sizing: border-box;
 }
@@ -307,9 +315,10 @@ button {
   box-sizing: border-box;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: 4%;
 }
+
 .book-form form button {
   width: 19%;
   height: 42px;
