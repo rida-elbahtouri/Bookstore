@@ -1,3 +1,87 @@
+
 body {
-  color: black;
+ 
+  /* width: 1600px;
+  height: 1434px; */
+  background-color: #f5f6fa;
+  
+}
+
+.panel-bg {
+  width: 100%;
+  height: 95px;
+  background-color:#ffffff ;
+  
+  
+}
+
+.azure {
+  color: #0290ff;
+}
+
+.Mask {
+  width: 27px;
+  height: 27px;
+  float: right;
+  
+  position: absolute;
+  right: 26px;
+ 
+}
+nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+li {
+  list-style: none;
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Bookstore-CMS {
+  width: 240px;
+  height: 37px;
+  font-family: Montserratapple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-left: 100px;
+}
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  font-family: Roboto, Helvetica, sans-serift;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  margin-left: 50px;
+}
+
+.CATEGORIES {
+  width: 105px;
+  height: 16px;
+  opacity: 0.5;
+  font-family: Roboto, Helvetica, sans-serift;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color:#121212;
+  margin-left: 50px;
+ 
 }
