@@ -1,9 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { CHANGE_FILTER } from '../actions/index';
 
-const CategoryFilter = ({ CHANGE_FILTER }) => {
+const CategoryFilter = ({ handleFilterChange }) => {
   const categories = [
     'All',
     'Action',
@@ -14,9 +12,7 @@ const CategoryFilter = ({ CHANGE_FILTER }) => {
     'Learning',
     'Sci-Fi',
   ];
-  const handleFilterChange = e => {
-    CHANGE_FILTER(e.target.value);
-  };
+
   return (
     <div className="categories-div">
       <select
@@ -33,15 +29,9 @@ const CategoryFilter = ({ CHANGE_FILTER }) => {
     </div>
   );
 };
-const mapDispatchToProps = dispatch => ({
-  CHANGE_FILTER: book => {
-    dispatch(CHANGE_FILTER(book));
-  },
-});
 
 CategoryFilter.propTypes = {
-  CHANGE_FILTER: PropTypes.func.isRequired,
-
+  handleFilterChange: PropTypes.func.isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(CategoryFilter);
+export default CategoryFilter;

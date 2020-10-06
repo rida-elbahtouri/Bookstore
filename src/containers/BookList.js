@@ -2,10 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { REMOVE_BOOK } from '../actions/index';
+import { REMOVE_BOOK, CHANGE_FILTER } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 
-const BookList = ({ books, filter, REMOVE_BOOK }) => {
+const BookList = ({
+  books, filter, REMOVE_BOOK, CHANGE_FILTER,
+}) => {
   const handleRemoveBook = book => {
     REMOVE_BOOK(book);
   };
@@ -15,10 +17,12 @@ const BookList = ({ books, filter, REMOVE_BOOK }) => {
   } else {
     booksfiltered = books.filter(book => book.category === filter);
   }
-
+  const handleFilterChange = e => {
+    CHANGE_FILTER(e.target.value);
+  };
   return (
     <div>
-      <CategoryFilter />
+      <CategoryFilter handleFilterChange={handleFilterChange} />
       <table>
         <thead>
           <tr>
@@ -49,6 +53,9 @@ const mapDispatchToProps = dispatch => ({
   REMOVE_BOOK: book => {
     dispatch(REMOVE_BOOK(book));
   },
+  CHANGE_FILTER: fl => {
+    dispatch(CHANGE_FILTER(fl));
+  },
 });
 
 const BookListConnect = connect(mapStateToProps, mapDispatchToProps)(BookList);
@@ -56,7 +63,8 @@ const BookListConnect = connect(mapStateToProps, mapDispatchToProps)(BookList);
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
   REMOVE_BOOK: PropTypes.func.isRequired,
-  filter: PropTypes.isRequired,
+  filter: PropTypes.string.isRequired,
+  CHANGE_FILTER: PropTypes.func.isRequired,
 };
 
 export default BookListConnect;
