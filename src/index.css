@@ -1,6 +1,4 @@
 body {
-  /* width: 1600px;
-  height: 1434px; */
   background-color: #f5f6fa;
 }
 
@@ -66,7 +64,7 @@ a {
 .BOOKS {
   width: 59px;
   height: 16px;
-  font-family: Roboto, Helvetica, sans-serift;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -81,7 +79,7 @@ a {
   width: 105px;
   height: 16px;
   opacity: 0.5;
-  font-family: Roboto, Helvetica, sans-serift;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -127,18 +125,12 @@ table {
   margin-right: auto;
 }
 
-/* .book-table{
-   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-} */
-
 .book-cat {
   padding-top: 20px;
   width: 49px;
   height: 18px;
   opacity: 0.5;
-  font-family: Roboto, Helvetica, sans-serift;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -151,20 +143,20 @@ table {
 .book-title {
   width: 197px;
   height: 29px;
-  font-family: RobotoSlab;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.2px;
-  color: var(--black-three);
+  color: #121212;
 }
 
 .Remove {
   width: 54px;
   height: 19px;
-  font-family: RobotoSlab;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
