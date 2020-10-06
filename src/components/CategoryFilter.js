@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { CHANGE_FILTER } from '../actions/index';
-const CategoryFilter = ({ filter }) => {
+const CategoryFilter = ({ filter, CHANGE_FILTER }) => {
   const categories = [
     'All',
     'Action',
