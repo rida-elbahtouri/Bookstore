@@ -5,17 +5,19 @@ import Book from '../components/Book';
 import { REMOVE_BOOK, CHANGE_FILTER } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 
-const BookList = ({ books, filter, REMOVE_BOOK, CHANGE_FILTER }) => {
-  const handleRemoveBook = (book) => {
+const BookList = ({
+  books, filter, REMOVE_BOOK, CHANGE_FILTER,
+}) => {
+  const handleRemoveBook = book => {
     REMOVE_BOOK(book);
   };
   let booksfiltered = books;
   if (filter === 'All') {
     booksfiltered = books;
   } else {
-    booksfiltered = books.filter((book) => book.category === filter);
+    booksfiltered = books.filter(book => book.category === filter);
   }
-  const handleFilterChange = (e) => {
+  const handleFilterChange = e => {
     CHANGE_FILTER(e.target.value);
   };
   return (
@@ -30,7 +32,7 @@ const BookList = ({ books, filter, REMOVE_BOOK, CHANGE_FILTER }) => {
           </tr>
         </thead>
         <tbody>
-          {booksfiltered.map((book) => (
+          {booksfiltered.map(book => (
             <Book
               book={book}
               key={book.id}
@@ -43,17 +45,15 @@ const BookList = ({ books, filter, REMOVE_BOOK, CHANGE_FILTER }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    books: state.books,
-    filter: state.filter,
-  };
-};
-const mapDispatchToProps = (dispatch) => ({
-  REMOVE_BOOK: (book) => {
+const mapStateToProps = state => ({
+  books: state.books,
+  filter: state.filter,
+});
+const mapDispatchToProps = dispatch => ({
+  REMOVE_BOOK: book => {
     dispatch(REMOVE_BOOK(book));
   },
-  CHANGE_FILTER: (fl) => {
+  CHANGE_FILTER: fl => {
     dispatch(CHANGE_FILTER(fl));
   },
 });
