@@ -1,19 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Books = ({ book, handleRemoveBook }) => (
   <tr className="Lesson-Panel">
-    <td className="book-cat">{book.category}</td>
-    <td className="book-title">{book.title}</td>
+    <div className="book-info">
+      <td className="book-cat">{book.category}</td>
+      <td className="book-title">{book.title}</td>
+      <div className="options">
+        <td className="Remove">Comments</td>
+        <span className="line">|</span>
+        <td className="Remove">
+          <a href="#" onClick={() => handleRemoveBook(book)}>
+            Remove
+          </a>
+        </td>
+        <span className="line">|</span>
 
-    <td className="Remove">Comments |</td>
-    <td className="Remove">
-      <a href="#" onClick={() => handleRemoveBook(book)}>
-        Remove
-      </a>
-    </td>
-
-    <td className="Remove">| Edit</td>
+        <td className="Remove">Edit</td>
+      </div>
+    </div>
   </tr>
 );
 

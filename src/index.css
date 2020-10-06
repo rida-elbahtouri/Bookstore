@@ -1,18 +1,13 @@
-
 body {
- 
   /* width: 1600px;
   height: 1434px; */
   background-color: #f5f6fa;
-  
 }
 
 .panel-bg {
   width: 100%;
   height: 95px;
-  background-color:#ffffff ;
-  
-  
+  background-color: #ffffff;
 }
 
 .azure {
@@ -23,16 +18,14 @@ body {
   width: 27px;
   height: 27px;
   float: right;
-  
+
   position: absolute;
   right: 26px;
- 
 }
-nav{
+nav {
   position: relative;
   display: flex;
   align-items: center;
-  
 }
 li {
   list-style: none;
@@ -81,27 +74,26 @@ a {
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color:#121212;
+  color: #121212;
   margin-left: 50px;
- 
 }
 
-.categories-div{
+.categories-div {
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.categories-filter{
+.categories-filter {
   height: 50px;
   width: 200px;
   border-radius: 10px;
   font-size: 20px;
-  border-color:#939393;
+  border-color: #939393;
 }
 
-.Lesson-Panel{
+.Lesson-Panel {
   margin-top: 20px;
   width: 1200px;
   height: 170px;
@@ -110,8 +102,9 @@ a {
   background-color: #ffffff;
   margin-left: 100px;
   margin-right: 100px;
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* .book-table{
@@ -120,11 +113,11 @@ a {
   margin-bottom: 30px;
 } */
 
-.book-cat{
+.book-cat {
   width: 49px;
   height: 18px;
   opacity: 0.5;
-  font-family: Roboto, Helvetica, sans-serift;;
+  font-family: Roboto, Helvetica, sans-serift;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -158,4 +151,26 @@ a {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+}
+
+.line {
+  color: #e8e8e8;
+}
+
+.book-info {
+  margin-left: 27px;
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding-top: 20px;
+}
+
+.book-cat{
+  padding-top: 20px;
 }
