@@ -18,10 +18,16 @@ const CategoryFilter = ({ CHANGE_FILTER }) => {
     CHANGE_FILTER(e.target.value);
   };
   return (
-    <div>
-      <select name="category" onChange={handleFilterChange}>
-        {categories.map(cat => (
-          <option key={cat}>{cat}</option>
+    <div className="categories-div">
+      <select
+        className="categories-filter"
+        name="category"
+        onChange={handleFilterChange}
+      >
+        {categories.map((cat) => (
+          <option key={cat}>
+            {cat}
+          </option>
         ))}
       </select>
     </div>

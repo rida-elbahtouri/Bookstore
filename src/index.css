@@ -85,3 +85,17 @@ a {
   margin-left: 50px;
  
 }
+
+.categories-div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.categories-filter{
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 20px;
+  border-color:#939393;
+}
