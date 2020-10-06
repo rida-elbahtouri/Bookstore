@@ -174,3 +174,54 @@ a {
 .book-cat{
   padding-top: 20px;
 }
+
+.book-progress{
+  display:flex;
+  float: right;
+
+}
+
+.circle{
+  background-color: #fff;
+  border: 5px solid;
+  border-color: #307bbe  #307bbe   rgb(238, 232, 232);
+  height: 60px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 60px;
+  margin-right: 0.6em;
+
+}
+
+.percentage {
+  width: 68px;
+  height: 39px;
+  font-family:  Roboto, Helvetica, sans-serif;;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Completed {
+  width: 80px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.percent-info{
+  display: flex;
+  flex-direction: column;
+}

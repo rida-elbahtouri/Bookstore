@@ -19,6 +19,13 @@ const Books = ({ book, handleRemoveBook }) => (
         <td className="Remove">Edit</td>
       </div>
     </div>
+    <div className="book-progress">
+      <div className="circle" />
+      <div className="percent-info" >
+        <span className="percentage">75%</span>
+        <span className="Completed">Completed</span>
+      </div>
+    </div>
   </tr>
 );
 
