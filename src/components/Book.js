@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Books = ({ book, handleRemoveBook }) => (
   <tr className="Lesson-Panel">
@@ -21,10 +21,15 @@ const Books = ({ book, handleRemoveBook }) => (
     </div>
     <div className="book-progress">
       <div className="circle" />
-      <div className="percent-info" >
+      <div className="percent-info">
         <span className="percentage">75%</span>
         <span className="Completed">Completed</span>
       </div>
+    </div>
+    <div className="udpateprogress">
+      <p className="current-chap">current chapter</p>
+      <p className="chapter-num">Chapter {book.id}</p>
+      <button type="button">UPDATE PROGRESS</button>
     </div>
   </tr>
 );

@@ -39,8 +39,8 @@ a {
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  font-family: Montserratapple-system, system-ui, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Montserratapple-system, system-ui, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -105,6 +105,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 100px;
 }
 
 /* .book-table{
@@ -171,33 +172,31 @@ a {
   padding-top: 20px;
 }
 
-.book-cat{
+.book-cat {
   padding-top: 20px;
 }
 
-.book-progress{
-  display:flex;
+.book-progress {
+  display: flex;
   float: right;
-
 }
 
-.circle{
+.circle {
   background-color: #fff;
   border: 5px solid;
-  border-color: #307bbe  #307bbe   rgb(238, 232, 232);
+  border-color: #307bbe #307bbe rgb(238, 232, 232);
   height: 60px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   width: 60px;
   margin-right: 0.6em;
-
 }
 
 .percentage {
   width: 68px;
   height: 39px;
-  font-family:  Roboto, Helvetica, sans-serif;;
+  font-family: Roboto, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -221,7 +220,42 @@ a {
   color: #121212;
 }
 
-.percent-info{
+.percent-info {
   display: flex;
   flex-direction: column;
+}
+.udpateprogress {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.udpateprogress button {
+  background-color: #0290ff;
+  border: none;
+  width: 184px;
+  height: 33px;
+  border-radius: 3px;
+  color: white;
+}
+.current-chap {
+  height: 18px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #939393;
+  margin: 0;
+}
+.chapter-num {
+  width: 212px;
+  height: 21px;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-top: 0;
 }
