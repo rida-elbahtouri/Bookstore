@@ -94,8 +94,8 @@ a {
 }
 
 .Lesson-Panel {
-  margin-top: 20px;
   width: 1200px;
+  margin-top: 20px;
   height: 170px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -227,7 +227,7 @@ a {
 .udpateprogress {
   font-family: Roboto, Helvetica, sans-serif;
 }
-.udpateprogress button {
+button {
   background-color: #0290ff;
   border: none;
   width: 184px;
@@ -258,4 +258,55 @@ a {
   line-height: normal;
   letter-spacing: -0.4px;
   margin-top: 0;
+}
+.book-form {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  width: 1200px;
+  /* margin: 0 auto; */
+  margin-left: 100px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.book-form h3 {
+  width: 174px;
+
+  height: 24px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  font-stretch: normal;
+
+  font-style: normal;
+
+  line-height: normal;
+
+  letter-spacing: -0.18px;
+
+  color: #888888;
+}
+.book-form form input {
+  width: 50%;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-right: 4%;
+  box-sizing: border-box;
+}
+
+.book-form form select {
+  width: 23%;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-right: 4%;
+}
+.book-form form button {
+  width: 19%;
+  height: 42px;
+  box-sizing: border-box;
 }
