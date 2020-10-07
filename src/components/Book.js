@@ -7,8 +7,8 @@ const Books = ({ book, handleRemoveBook }) => (
       <td className="book-cat">{book.category}</td>
       <td className="book-title">{book.title}</td>
       <div className="options">
-        <td className="Remove">Comments</td>
-        <span className="line">|</span>
+        <td className="Remove comment remove-padding">Comments</td>
+
         <td className="Remove">
           <button
             className="Remove"
@@ -18,9 +18,8 @@ const Books = ({ book, handleRemoveBook }) => (
             Remove
           </button>
         </td>
-        <span className="line">|</span>
 
-        <td className="Remove">Edit</td>
+        <td className="Remove remove-padding">Edit</td>
       </div>
     </div>
     <div className="book-progress">

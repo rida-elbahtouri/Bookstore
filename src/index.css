@@ -167,7 +167,7 @@ table {
 }
 
 .Remove {
-  width: 54px;
+  /* width: 54px; */
   height: 19px;
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 14px;
@@ -179,6 +179,26 @@ table {
   color: #4386bf;
   background: none;
   cursor: pointer;
+  /* padding-left: 20px; */
+}
+
+.Remove button {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 0;
+  margin-right:20px;
+  
+   padding-right: 20px; 
+   padding-left: 20px;
+   padding-top: 2px;
+}
+.remove-padding{
+  padding-top: 3px;
+}
+.comment{
+  padding-left: 0;
+  padding-right: 0;
+   
 }
 
 .line {
@@ -255,7 +275,7 @@ table {
 button {
   background-color: #0290ff;
   border: none;
-  width: 184px;
+  /* width: 184px; */
   height: 33px;
   border-radius: 3px;
   color: white;
