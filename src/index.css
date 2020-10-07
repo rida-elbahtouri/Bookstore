@@ -51,8 +51,18 @@ a {
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  font-family: Montserratapple-system, system-ui, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    Montserratapple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
