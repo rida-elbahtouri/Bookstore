@@ -1,7 +1,7 @@
 body {
   background-color: #f5f6fa;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .panel-bg {
@@ -30,6 +30,7 @@ nav {
   width: 100%;
   background-color: #fff;
 }
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -40,9 +41,6 @@ nav ul {
 
 li {
   list-style: none;
- 
-  /* align-content: center;
-  align-items: center; */
 }
 
 a {
@@ -53,18 +51,8 @@ a {
 .Bookstore-CMS {
   width: 240px;
   height: 37px;
-  font-family:
-    Montserratapple-system,
-    system-ui,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: Montserratapple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -85,7 +73,6 @@ a {
   letter-spacing: 1.9px;
   color: #121212;
   margin-left: 50px;
-  
 }
 
 .CATEGORIES {
@@ -166,8 +153,25 @@ table {
   color: #121212;
 }
 
+button {
+  background-color: #0290ff;
+  border: none;
+  height: 33px;
+  border-radius: 3px;
+  color: white;
+}
+
+.Remove button {
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-radius: 0;
+  margin-right: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
 .Remove {
-  /* width: 54px; */
   height: 19px;
   font-family: RobotoSlab-Bold, Roboto, Helvetica, sans-serif;
   font-size: 14px;
@@ -179,26 +183,15 @@ table {
   color: #4386bf;
   background: none;
   cursor: pointer;
-  /* padding-left: 20px; */
 }
 
-.Remove button {
-  border-left: 1px solid #e8e8e8;;
-  border-right: 1px solid #e8e8e8;;
-  border-radius: 0;
-  margin-right:20px;
-  
-   padding-right: 20px; 
-   padding-left: 20px;
-   padding-top: 2px;
-}
-.remove-padding{
+.remove-padding {
   padding-top: 3px;
 }
-.comment{
+
+.comment {
   padding-left: 0;
   padding-right: 0;
-   
 }
 
 .line {
@@ -214,7 +207,7 @@ table {
 
 .options {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   padding-top: 20px;
 }
@@ -274,18 +267,8 @@ table {
   padding-left: 100px;
 }
 
-button {
-  background-color: #0290ff;
-  border: none;
-  
-  height: 33px;
-  border-radius: 3px;
-  color: white;
-}
-
-.udpateprogress button{
+.udpateprogress button {
   width: 184px;
-  
 }
 
 .current-chap {
@@ -358,4 +341,3 @@ button {
   height: 42px;
   box-sizing: border-box;
 }
-
