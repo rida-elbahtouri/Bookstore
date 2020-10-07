@@ -5,14 +5,10 @@ const NavBar = () => (
   <nav className="">
     <div className="panel-bg">
       <ul>
-        <li>
-          <span className="azure Bookstore-CMS">Bookstore CMS</span>
-        </li>
-        <li>
-          <span className="BOOKS ">BOOKS</span>
-        </li>
-        <li>
-          <span className=" CATEGORIES">CATEGORIES</span>
+        <li className="azure Bookstore-CMS">Bookstore CMS</li>
+        <li className="BOOKS ">BOOKS</li>
+        <li className=" CATEGORIES">
+          CATEGORIES
         </li>
         <li>
           <img alt="icon" src={icon} className="azure Mask" />
