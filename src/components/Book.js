@@ -2,11 +2,41 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Books = ({ book, handleRemoveBook }) => (
-  <tr>
-    <td>{book.id}</td>
-    <td>{book.title}</td>
-    <td>{book.category}</td>
-    <td><button type="button" onClick={() => handleRemoveBook(book)}>X</button></td>
+  <tr className="Lesson-Panel">
+    <div className="book-info">
+      <td className="book-cat">{book.category}</td>
+      <td className="book-title">{book.title}</td>
+      <div className="options">
+        <td className="Remove comment remove-padding">Comments</td>
+
+        <td className="Remove">
+          <button
+            className="Remove"
+            type="button"
+            onClick={() => handleRemoveBook(book)}
+          >
+            Remove
+          </button>
+        </td>
+
+        <td className="Remove remove-padding">Edit</td>
+      </div>
+    </div>
+    <div className="book-progress">
+      <div className="circle" />
+      <div className="percent-info">
+        <span className="percentage">75%</span>
+        <span className="Completed">Completed</span>
+      </div>
+    </div>
+    <div className="udpateprogress">
+      <p className="current-chap">current chapter</p>
+      <p className="chapter-num">
+        Chapter
+        {book.id}
+      </p>
+      <button type="button">UPDATE PROGRESS</button>
+    </div>
   </tr>
 );
 

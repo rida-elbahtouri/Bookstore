@@ -14,10 +14,16 @@ const CategoryFilter = ({ handleFilterChange }) => {
   ];
 
   return (
-    <div>
-      <select name="category" onChange={handleFilterChange}>
+    <div className="categories-div">
+      <select
+        className="categories-filter"
+        name="category"
+        onChange={handleFilterChange}
+      >
         {categories.map(cat => (
-          <option key={cat}>{cat}</option>
+          <option key={cat}>
+            {cat}
+          </option>
         ))}
       </select>
     </div>

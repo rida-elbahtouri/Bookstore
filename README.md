@@ -1,7 +1,7 @@
 # BookStore
 
 # BookStore (React)
-
+<img src = "bookstore.gif" alt="gif">
 In this project we were tasked with building a bookstore application with React and Redux to organize and manage the books.
 
 ### Live Link
